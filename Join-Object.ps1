@@ -200,10 +200,12 @@
     (
         [Parameter(Mandatory=$true,
                    ValueFromPipeLine = $true)]
+        [AllowEmptyCollection()]
         [object[]] $Left,
 
         # List to join with $Left
         [Parameter(Mandatory=$true)]
+        [AllowEmptyCollection()]
         [object[]] $Right,
 
         [Parameter(Mandatory = $true)]
